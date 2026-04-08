@@ -724,7 +724,7 @@
       <p class="contact-intro">"Open to collaborations on multilingual NLP, computational political communication, and algorithmic fairness research."</p>
       <div class="contact-item">
         <span class="contact-label">Email</span>
-        <span class="contact-value"><a href="/cdn-cgi/l/email-protection#463f2f20232f68222f28216876767706353233222328326833282f682a33"><span class="__cf_email__" data-cfemail="6910000f0c00470d00070e47595958291a1d1c0d0c071d471c070047051c">[email&#160;protected]</span></a></span>
+        <span class="contact-value"><a href="mailto:yifei.ding.001@student.uni.lu">yifei.ding.001@student.uni.lu</a></span>
       </div>
       <div class="contact-item">
         <span class="contact-label">ORCID</span>
@@ -761,5 +761,11 @@
   <span class="footer-copy">University of Luxembourg · 2026</span>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-  const obser
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
